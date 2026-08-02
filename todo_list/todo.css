@@ -1,0 +1,41 @@
+:root {
+    /* Soft Light Mode Theme */
+    --zen-light-bg: #f4ebe5;
+    /* Warm, soft cream canvas */
+    --zen-light-surface: #fcebe4;
+    /* Secondary container surface */
+    --zen-light-text-main: #2e1000;
+    /* High contrast but soft brown-black */
+    --zen-light-text-muted: #7d6558;
+    /* Muted secondary text */
+    --zen-light-accent: #ef8c62;
+    /* Soft coral accent color */
+
+    /* Soft Dark Mode Theme */
+    --zen-dark-bg: #181825;
+    /* Soft dark mocha/slate */
+    --zen-dark-surface: #1e1e2e;
+    /* Raised panel surface */
+    --zen-dark-text-main: #cdd6f4;
+    /* Soft pastel white/lavender text */
+    --zen-dark-text-muted: #a6adc8;
+    /* Muted gray text */
+    --zen-dark-accent: #b4befe;
+    /* Soft lavender accent color */
+}
+
+body {
+    background-color: var(--zen-dark-bg);
+    color: var(--zen-dark-text-main);
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    text-shadow: 1px 1px 2px var(--zen-dark-surface);
+}
+
+.todoList,
+.todoFormInput {
+    font-size: 20px;
+}
+
+span {
+    background-color: var(--zen-dark-surface);
+}
