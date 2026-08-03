@@ -251,6 +251,20 @@ registerForm.addEventListener("submit", (event) => {
     emailInput.parentNode.appendChild(errorMessage);
   }
 
+  if (usernameInput.value === "") {
+    const errorMessage = document.createElement("span");
+    errorMessage.classList.add("errorMessage");
+    errorMessage.innerText = "Username is empty";
+    usernameInput.parentNode.appendChild(errorMessage);
+  }
+
+  if (passwordInput.value === "") {
+    const errorMessage = document.createElement("span");
+    errorMessage.classList.add("errorMessage");
+    errorMessage.innerText = "Password is empty";
+    passwordInput.parentNode.appendChild(errorMessage);
+  }
+
   console.log(
     "submit",
     emailInput.value,
@@ -260,5 +274,3 @@ registerForm.addEventListener("submit", (event) => {
 });
 
 // ===================================================== //
-
-// Javascript DOM To-do List Project

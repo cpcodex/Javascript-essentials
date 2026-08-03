@@ -15,6 +15,7 @@ todoForm.addEventListener("submit", (event) => {
 
   // create and store our todo
   const todo = document.createElement("div");
+
   todo.innerHTML =
     "<span> - " +
     todoFormInput.value +
