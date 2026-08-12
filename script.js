@@ -274,3 +274,56 @@ registerForm.addEventListener("submit", (event) => {
 });
 
 // ===================================================== //
+
+// Javascript Async/await
+
+// There is an old way and a new way to do thing with async and await
+
+// OLD:
+
+// const getData = () => {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve([{ id: "1", name: "Jack" }]);
+//     });
+//   });
+// };
+
+// NEW:
+
+// const getData = async () => {
+//   return [{ id: "1", name: "Jack" }];
+// };
+
+// OLD:
+
+// const promise = getData();
+
+// promise
+// .then((data) => {
+// console.log("I got data", data);
+// })
+// .catch((data) => {
+// console.log("I got error", data);
+// })
+// .finally(() => {
+// console.log("I am done");
+// });
+
+// NEW:
+
+// const response = await getData();
+// console.log("response", response);
+
+// =====================================================
+
+// Javascript fetching data
+
+// const loadPosts = async () => {
+//   const response = await fetch("https://localhost:3004/posts");
+//   const json = await response.json();
+//   return json;
+// };
+
+// const result = await loadPosts();
+// console.log("result", result);

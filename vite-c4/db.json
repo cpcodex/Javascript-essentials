@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    },
+    {
+      "title": "Nick",
+      "id": "J66XoU2iNIQ"
+    },
+    {
+      "title": "Jack",
+      "id": "a4xNuQ8rOU0"
+    }
+  ]
+}
