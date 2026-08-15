@@ -1,53 +1,43 @@
 // Main app code:
 // =========================
 
-// import "./style.css";
-// import javascriptLogo from "./assets/javascript.svg";
-// import viteLogo from "./assets/vite.svg";
-// import heroImg from "./assets/hero.png";
-// import { setupCounter } from "./counter.js";
-// import { getUsersNames } from "./utils.js";
-// import secretString from "./constants.js";
+import "./style.css";
+import javascriptLogo from "./assets/javascript.svg";
+import viteLogo from "./assets/vite.svg";
+import heroImg from "./assets/hero.png";
+import { setupCounter } from "./counter.js";
+import { getUsersNames } from "./utils.js";
+import secretString from "./constants.js";
 
-// document.querySelector("#app").innerHTML = `
-// <section id="center">
-//   <div class="hero">
-//     <img src="${heroImg}" class="base" width="170" height="179">
-//     <img src="${javascriptLogo}" class="framework" alt="JavaScript logo"/>
-//     <img src="${viteLogo}" class="vite" alt="Vite logo" />
-//   </div>
-//   <div>
-//     <h1>Get started</h1>
-//     <p>Edit <code>src/main.js</code> and save to test <code>HMR</code></p>
-//   </div>
-//   <button id="counter" type="button" class="counter"></button>
-// </section>
+document.querySelector("#app").innerHTML = `
+<section id="center">
+  <div class="hero">
+    <img src="${heroImg}" class="base" width="170" height="179">
+    <img src="${javascriptLogo}" class="framework" alt="JavaScript logo"/>
+    <img src="${viteLogo}" class="vite" alt="Vite logo" />
+  </div>
+  <div>
+    <h1>Get started</h1>
+    <p>Edit <code>src/main.js</code> and save to test <code>HMR</code></p>
+  </div>
+  <button id="counter" type="button" class="counter"></button>
+  <form>
+      <input type="text" class="nameInput" placeholder="Type your name.." />
+      <br />
+      <button class="nameButton">Add Name</button>
+    </form>
+</section>
 
-// <div class="ticks"></div>`;
+<div class="ticks"></div>`;
 
-// setupCounter(document.querySelector("#counter"));
+setupCounter(document.querySelector("#counter"));
 
-// const username = getUsersNames([{ id: "1", name: "jack" }]);
-// console.log(username, secretString);
-
-// const loadPosts = async () => {
-//   const response = await fetch("http://localhost:3004/posts");
-//   const json = await response.json();
-//   return json;
-// };
-
-// const result = await loadPosts();
-// console.log("result", result);
+const username = getUsersNames([{ id: "1", name: "jack" }]);
+console.log(username, secretString);
 
 // =====================
 
-// Fetching data task
-
-// - create and input and the button in html
-// - add javascript which creates new post through API with the name from input when we click the button
-// - dont send a request if the input is empty
-
-// ids = nameForm, nameInput, nameButton
+// Fetching posts from db.json task
 
 const nameInput = document.querySelector(".nameInput");
 const nameButton = document.querySelector(".nameButton");
@@ -84,3 +74,5 @@ nameButton.addEventListener("click", async () => {
   nameInput.value = "";
   console.log("Added! ", nameInput.value);
 });
+
+// =====================
