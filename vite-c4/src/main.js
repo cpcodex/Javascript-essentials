@@ -17,8 +17,8 @@ document.querySelector("#app").innerHTML = `
     <img src="${viteLogo}" class="vite" alt="Vite logo" />
   </div>
   <div>
-    <h1>Get started</h1>
-    <p>Edit <code>src/main.js</code> and save to test <code>HMR</code></p>
+    <h1>Your App</h1>
+    <p>Vite + Vanilla JavaScript</p>
   </div>
   <button id="counter" type="button" class="counter"></button>
   <form>
@@ -34,8 +34,6 @@ setupCounter(document.querySelector("#counter"));
 
 const username = getUsersNames([{ id: "1", name: "jack" }]);
 console.log(username, secretString);
-
-// =====================
 
 // Fetching posts from db.json task
 
