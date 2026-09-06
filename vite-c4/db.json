@@ -9,6 +9,15 @@
       "id": "2",
       "title": "another title",
       "views": 200
+    },
+    {
+      "title": "Nick",
+      "id": "52yf2acYpls"
+    },
+    {
+      "title": "Jimmy",
+      "id": "emwTh6_ZA8E"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
