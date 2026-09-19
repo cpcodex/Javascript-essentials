@@ -1,0 +1,21 @@
+:root {
+  --primary-color: #296a96;
+  --text-color: #ffffff00;
+}
+
+.accordionTitle {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.accordionContent {
+  padding: 5px;
+  background-color: var(--primary-color);
+}
+
+.hidden {
+  display: none;
+}
